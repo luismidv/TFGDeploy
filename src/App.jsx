@@ -9,6 +9,13 @@ import searchImage from './static/media/search-svgrepo-com.svg';
 import roomIdxImage from './static/media/room_idx.webp';
 import roombannerImage from './static/media/roombanner8.jpg';
 import { Banner } from './Banner';
+import roombannerImage1 from './static/media/roombanner1.webp';
+import roombannerImage2 from './static/media/roombanner2.jpg';
+import roombannerImage3 from './static/media/roombanner3.webp';
+import roombannerImage4 from './static/media/roombanner4.jpg';
+import roombannerImage5 from './static/media/roombanner5.jpg';
+import roombannerImage6 from './static/media/roombanner6.webp';
+
 const HomePage = () => {
   return (
     <div>
@@ -126,12 +133,12 @@ export default HomePage;
 export function AppExpo(){
   return (
     <div className = "banners-flex">
-      <Banner image = "./src/static/media/roombanner1.webp" title = "Room number 1" ></Banner>
-      <Banner image = "./src/static/media/roombanner2.jpg" title = "Room number 2"></Banner>
-      <Banner image = "./src/static/media/roombanner3.webp" title = "Room number 3"></Banner> 
-      <Banner image = "./src/static/media/roombanner4.jpg" title = "Room number 4"></Banner>
-      <Banner image = "./src/static/media/roombanner5.jpg" title = "Room number 5"></Banner>
-      <Banner image = "./src/static/media/roombanner6.webp" title = "Room number 6"></Banner>
+      <Banner image = {roombannerImage1} title = "Room number 1" ></Banner>
+      <Banner image = {roombannerImage2} title = "Room number 2"></Banner>
+      <Banner image = {roombannerImage3} title = "Room number 3"></Banner> 
+      <Banner image = {roombannerImage4} title = "Room number 4"></Banner>
+      <Banner image = {roombannerImage5} title = "Room number 5"></Banner>
+      <Banner image = {roombannerImage6} title = "Room number 6"></Banner>
     </div>
   )
 }
