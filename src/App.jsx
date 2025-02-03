@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import { Template } from './Roompage';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './Homepage';
+import ProfileComponent from './profile';
+import RegisterPage from './register';
 
 
 export function AppExpo(){
@@ -33,9 +35,9 @@ export function App() {
       
       <Route path ="/"  element = {<HomePage />} />
       <Route path="/rooms" element={<Template />} />
-      <Route path ="/profile"  element = {<HomePage />} />
+      <Route path ="/profile"  element = {<ProfileComponent />} />
       <Route path="/contact" element={<Template />} />
-        
+      <Route path="/register" element={<RegisterPage />} />
     </Routes>
     
   );

@@ -48,9 +48,10 @@ const HomePage = () => {
             <input className="room-search" type="search" name="q" placeholder="Where do you need a room" />
             <img className="search-img" src={searchImage} alt="Search" />
             <button className="submit-search" type="submit"></button>
-            <a className="log-in-button" href="./src/templates/room/login.html">
-              <p>Access</p>
-            </a>
+            <Link className="log-in-button" to ="/register">
+                    <p className="link-text">Access</p>
+            </Link>
+            
           </form>
         </div>
   

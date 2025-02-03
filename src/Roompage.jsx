@@ -9,13 +9,16 @@ import roombannerImage from './static/media/roombanner8.jpg';
 import { Link } from 'react-router-dom';
 import { AppExpo } from './App';
 import { useNavigate } from 'react-router-dom';
-function Home(){
-    const navigate = useNavigate();
-}
+
 import React from "react";
 import "./static/css/index1.css";
 import "./static/css/roomStyle.css";
+import { RoomBannerCall } from './Room';
+
     
+function Home(){
+    const navigate = useNavigate();
+}
 
 export function Template() {
     return (
@@ -68,7 +71,7 @@ export function Template() {
 
       {/* Contenedor de habitaciones */}
       <div id="room-container1">
-
+        <RoomBannerCall />
       </div>
 
       {/* Sección "Sobre nosotros" */}
