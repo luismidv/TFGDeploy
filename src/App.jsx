@@ -13,6 +13,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './Homepage';
 import ProfileComponent from './profile';
 import RegisterPage from './register';
+import LoginPage from './login'
 
 
 export function AppExpo(){
@@ -38,6 +39,7 @@ export function App() {
       <Route path ="/profile"  element = {<ProfileComponent />} />
       <Route path="/contact" element={<Template />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
     
   );

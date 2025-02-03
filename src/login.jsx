@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
+import "./static/css/login.css"
 import { Link } from 'react-router-dom';
 import { AppExpo } from './App';
 import { useNavigate } from 'react-router-dom';
-
 function Home(){
     const navigate = useNavigate();
 }
-
-import "./static/css/login.css"
-const RegisterPage = () => {
+const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -21,7 +19,7 @@ const RegisterPage = () => {
 
   return (
     <div className="log-in-container">
-      <p className="log-in-text">Register</p>
+      <p className="log-in-text">Log-in</p>
       
         <form className="form-class" name="register-form" method="post" onSubmit={handleSubmit}>
           <fieldset className="form-fieldset">
@@ -47,15 +45,17 @@ const RegisterPage = () => {
             
 
             <button className="log-in-form" type="submit">
+             
               Continue
             </button>
-            
           </fieldset>
         </form>
-        
+        <Link className="register-button" to ="/register">
+          <p className="link-text-login"> Are you not registered yet?</p>
+        </Link>
      
     </div>
   );
 };
 
-export default RegisterPage;
+export default LoginPage;
