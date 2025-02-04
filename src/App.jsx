@@ -14,6 +14,7 @@ import HomePage from './Homepage';
 import ProfileComponent from './profile';
 import RegisterPage from './register';
 import LoginPage from './login'
+import RoomInfo from './inforoom';
 
 
 export function AppExpo(){
@@ -40,6 +41,7 @@ export function App() {
       <Route path="/contact" element={<Template />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/inforoom" element={<RoomInfo />} />
     </Routes>
     
   );

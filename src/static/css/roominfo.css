@@ -244,3 +244,9 @@
     border-color: #303ab2;
     
 }
+
+.root-room {
+    position: absolute;
+    top: 600px;
+    left: -110px;
+}

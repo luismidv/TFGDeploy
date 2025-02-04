@@ -49,7 +49,7 @@ export function RoomBannerCall() {
 
 
 
-function RoomBanner({label, img, rooms, metters, bathrooms,price, bedroomsvg, 
+export function RoomBanner({label, img, rooms, metters, bathrooms,price, bedroomsvg, 
     bathroomsvg, eurosvg,profilesvg, username, directionsvg, direction, description}) {
     
     return(
