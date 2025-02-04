@@ -106,7 +106,7 @@ const RegisterPage = () => {
 
     return (
       <div className="log-in-container">
-        <p className="log-in-text">Log-in</p>
+        <p className="log-in-text">Register</p>
         <form className="form-class" name="register-form" onSubmit={handleSubmit}>
           <fieldset className="form-fieldset">
           <label className="label-email" htmlFor="email-input">Email</label>
