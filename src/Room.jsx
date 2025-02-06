@@ -11,6 +11,7 @@ import directionsvg from "./static/media/RoomBanners/location.svg"
 import eurosvg from "./static/media/RoomBanners/euro.svg"
 import bathroomsvg from "./static/media/RoomBanners/bathroom.svg"
 import { Link } from 'react-router-dom';
+import profilepic from "./static/media/profilepic.jpg"
 
 
 export function RoomBannerCall() {
@@ -122,11 +123,34 @@ export function RoomInfo({label, img, rooms, metters, bathrooms,price, bedroomsv
             <div className = "tenants-info">
                 
             </div>
-
-            
-            
-            
         </div>
-            
     )
     }
+
+export function RecomInfo() {
+    const features = ["Name","Age","Worktimes","Pets","Cooking","Sport","Smoking", "   Score"]
+    return (
+        <div>
+            <p style={{ whiteSpace: "pre-wrap", position:"relative", left: "55px", fontWeight: "bold",fontFamily:"sans-serif", color: "#303ab2" }}>
+                {features.join("      ")}
+            </p>
+            <RecomLines></RecomLines> <br/><br/>
+            <RecomLines></RecomLines> <br/><br/>
+            <RecomLines></RecomLines> <br/><br/>
+            <RecomLines></RecomLines> <br/><br/>
+            
+        </div>
+    )   
+}
+
+export function RecomLines(){
+    const features = ["Luis","20","Night","Yes","Yes","  Yes","    No", "       70%"]
+    return(
+        <section>
+            <img className = "profilepic" src = {profilepic}></img>
+            <p style={{ whiteSpace: "pre-wrap", position:"relative", left: "65px", fontWeight: "bold"}}>
+                {features.join("\t\t\t")}
+            </p>
+        </section>
+    )
+}

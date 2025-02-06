@@ -72,7 +72,6 @@ export function Template() {
       {/* Contenedor de habitaciones */}
       <div id="room-container1">
         <RoomBannerCall />
-        
       </div>
 
       {/* Sección "Sobre nosotros" */}
