@@ -218,3 +218,14 @@
     font-weight: bold;
     
 }
+
+.sec-recomend{
+    position: relative;
+    top: -500px;
+    left: 1200px;
+    width: 700px;
+    height: 500px;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color:#303ab2;
+}

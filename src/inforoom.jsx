@@ -75,6 +75,9 @@ const RoomInfo = () => {
             directionsvg = {directionsvg} direction ="Joaquin Sorolla street"
             description = "Beatiful house in the center"> 
         </RoomBanner>
+        <section className ="sec-recomend">
+          
+        </section>
       
       <div className="slideshow-container">
         <div className="mySlides fade">

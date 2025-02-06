@@ -10,6 +10,7 @@ import profsvg from "./static/media/RoomBanners/userprof.svg"
 import directionsvg from "./static/media/RoomBanners/location.svg"
 import eurosvg from "./static/media/RoomBanners/euro.svg"
 import bathroomsvg from "./static/media/RoomBanners/bathroom.svg"
+import { Link } from 'react-router-dom';
 
 
 export function RoomBannerCall() {
@@ -75,8 +76,9 @@ export function RoomBanner({label, img, rooms, metters, bathrooms,price, bedroom
             <img className = "direction-img" src = {directionsvg}></img>
             <p className = "direction-p"> {direction}</p>
             
-            <a className = "room-info"  href = "../templates/room.html" target = "_blank">Visit</a>
-            
+            <Link className="room-info" to ="/inforoom">
+                Visit
+            </Link>
             {description.split("\n").map((line,index) => (
                 <p className = "description-p" key={index}>{line}</p>
             ))}

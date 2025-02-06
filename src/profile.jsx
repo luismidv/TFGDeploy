@@ -48,9 +48,9 @@ const ProfileComponent = () => {
         <input className="room-search" type="search" name="q" placeholder="Where do you need a room?" />
         <img className="search-img" src={searchIcon} alt="Search" />
         <button className="submit-search" type="submit"></button>
-        <a className="log-in-button" href="./login.html">
-          <p>Access</p>
-        </a>
+        <Link className="log-in-button" to ="/login">
+          <p className="link-text">Access</p>
+        </Link>
       </form>
 
       <section className="recomendations">

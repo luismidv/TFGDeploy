@@ -57,9 +57,9 @@ export function Template() {
         <img className="search-img" src={searchImage} alt="Search" />
         <button className="submit-search" type="submit"></button>
 
-        <a className="log-in-button" href="./login.html">
-          <p>Access</p>
-        </a>
+        <Link className="log-in-button" to ="/login">
+          <p className="link-text">Access</p>
+        </Link>
       </form>
 
       {/* Sección de recomendaciones */}
@@ -72,6 +72,7 @@ export function Template() {
       {/* Contenedor de habitaciones */}
       <div id="room-container1">
         <RoomBannerCall />
+        
       </div>
 
       {/* Sección "Sobre nosotros" */}
