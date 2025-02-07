@@ -10,12 +10,54 @@ import { AppExpo } from './App';
 import { useNavigate } from 'react-router-dom';
 import "./static/css/index1.css"
 import "./static/css/profile.css"
+import{ useState} from "react";
+
 
 function Home(){
     const navigate = useNavigate();
 }
 
-const ProfileComponent = () => {
+
+export function ProfileForm(){
+
+    const [formData, setFormData] = useState({
+        name : "",
+        surnames:"",
+        age:"",
+        email:"",
+        worktime:"",
+        biorythm:"",
+        level_studies:"",
+        reading:"",
+        pets:"",
+        cook:"",
+        sport:"",
+        smoker:"",
+        orderliness:"",
+    });
+
+
+const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+}
+
+const handleSubmit = async(e) => {
+    e.preventDefault();
+
+    try{
+        const response = await fetch("https://tfgserver.onrender.com/api/algo_view/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData)
+    });
+
+      const result = await response.json();
+      alert("Form submitted successfully");
+    }catch(error){
+      console.error("Error submitting form: ", error);
+      alert("Failed to submit the form");
+    }
+  };
   return (
     <div className="top-container">
       <img className="mainlogo" src={companyLogo} alt="Company Logo" />
@@ -189,5 +231,4 @@ const ProfileComponent = () => {
     </div>
   );
 }
-
-export default ProfileComponent;
+export default ProfileForm;
