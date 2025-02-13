@@ -25,7 +25,7 @@ const HomePage = () => {
           <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
   
           <form className="search-bar-form">
-            <div className="menu-div flex flex-wrap justify-center gap-4 p-4 bg-gray-100">
+            <div className="menu-div flex flex-wrap justify-center gap-4 p-4">
                 <Link className="rooti-button text-white rounded-md hover:bg-blue-700 transition w-full sm:w-1/2 md:w-auto" to="/">
                     <p className="link-text">Home</p>
                     <img src={houseImage} alt="Home" />
