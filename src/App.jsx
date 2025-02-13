@@ -19,7 +19,7 @@ import RoomInfo from './inforoom';
 
 export function AppExpo(){
   return (
-    <div className = "banners-flex">
+    <div className = "banners-flex flex flex-wrap justify-center gap-4 p-4">
       <Banner image = {roombannerImage1} title = "Room number 1" ></Banner>
       <Banner image = {roombannerImage2} title = "Room number 2"></Banner>
       <Banner image = {roombannerImage3} title = "Room number 3"></Banner> 
