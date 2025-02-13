@@ -18,50 +18,14 @@ import profsvg from "./static/media/RoomBanners/userprof.svg"
 import directionsvg from "./static/media/RoomBanners/location.svg"
 import eurosvg from "./static/media/RoomBanners/euro.svg"
 import bathroomsvg from "./static/media/RoomBanners/bathroom.svg"
+import { Headers } from "./App";
+import { Footer } from "./App";
 
 
 const RoomInfo = () => {
   return (
     <div>
-      <div className="top-container p-6 rounded-lg shadow-lg">
-                <img className="mainlogo w-full md:w-auto" src={companyImage} alt="Company Logo" />
-                <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
-        
-                <form className="search-bar-form">
-                  <div className="menu-div flex flex-wrap justify-center">
-                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/">
-                         <img src={houseImage} alt="Home" />
-                      </Link>
-      
-                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/rooms">
-                          <img src={bedsImage} alt="Rooms" />
-                      </Link>
-        
-                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/profile">
-                          
-                          <img src={profileImage} alt="Profile" />
-                      </Link>
-        
-                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/contact">
-                          
-                          <img src={contactImage} alt="Contact" />
-                      </Link>
-                  </div>
-  
-            <input className="room-search" type="search" name="q" placeholder="Where do you need a room" />
-            <img className="search-img" src={searchImage} alt="Search" />
-            <button className="submit-search" type="submit"></button>
-            <Link className="log-in-button" to ="/login">
-                    <p className="link-text">Access</p>
-            </Link>
-            
-          </form>
-    </div>
-    <section className="recomendations">
-        <p className="text-descriptive">Need a room?</p>
-        <p className="text-descriptive-2">Discover our crazy offers & Share with your dream partners</p>
-        <div className="text-div"></div>
-    </section>
+      <Headers></Headers>
       
     <div className = "root-room">   
         <RoomBanner label = "Room at the center of Valencia" img = {roombanner3}
@@ -103,27 +67,7 @@ const RoomInfo = () => {
       </div>
     </div> 
       
-      <section className="about-us">
-        <h1 className="about-us-h1">About us</h1>
-        <div className="about-us-div">
-          <div className="div-text-about">
-            <p className="p-div-section">Our purpose</p>
-            <p className="purpose-description">Mainly our purpose is to help people have<br /> the best experience when sharing a home</p>
-          </div>
-          <div className="div-text-about">
-            <p className="p-div-section">Who are we?</p>
-            <p className="who-description">Company created in 2024 as a final degree project<br /> with the idea of improving students' sharing experience</p>
-          </div>
-          <div className="div-text-about">
-            <p className="p-div-section">Our team</p>
-            <p className="team-description">Our team consists of 1 person.<br /> A computer science student focused on Machine Learning</p>
-          </div>
-          <div className="div-text-about">
-            <p className="p-div-section">Work with us</p>
-            <p className="work-description">Feel free to message us via our email or LinkedIn<br /> if you are considering working with us</p>
-          </div>
-        </div>
-      </section>
+      <Footer></Footer>
     </div>
   );
 };
