@@ -404,7 +404,7 @@ select{
     height: 45px;
     position: relative;
     top:-32px;
-    left: -20px;
+    left: -50px;
 }
 
 .rooti-button:nth-of-type(2) img{
@@ -429,7 +429,7 @@ select{
 
 .rooti-button p{
     position: relative;
-    left:5px;
+    left:-25px;
     top: 8px;
     font-weight: bold;
     color:white;
