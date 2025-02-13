@@ -45,7 +45,7 @@ const HomePage = () => {
                 </Link>
             </div>
   
-            <div className="relative mt-4">
+            <div className="divsearch relative mt-4">
               <input className="room-search w-full md:w-auto" type="search" name="q" placeholder="Where do you need a room" />
               <img className="search-img absolute w-6 h-6" src={searchImage} alt="Search" />
               <button className="submit-search" type="submit"></button>

@@ -412,6 +412,12 @@ select{
     top: 11px;
 }
 
+.divsearch{
+    position: relative;
+    top: -70px;
+    left: -20px;
+}
+
 
 .rooti-button:hover{
     transition-duration: 0.5s;
