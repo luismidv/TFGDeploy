@@ -59,47 +59,48 @@ const handleSubmit = async(e) => {
     }
   };
   return (
-    <div className="top-container">
-      <img className="mainlogo" src={companyLogo} alt="Company Logo" />
-      <p className="pslogan">Improving your house sharing experience</p>
-
-      <form className="search-bar-form">
-        <div className="menu-div">
-        <Link className="rooti-button" to ="/">
-                    <p className="link-text">Home</p>
-                    <img src={houseIcon} alt="Home" />
-                </Link>
-
-                {/*<button  className = "rooti-button" onClick = {() => navigate("/rooms")}> Rooms </button>*/}
-                <Link className="rooti-button" to ="/rooms">
-                    <p className="link-text">Rooms</p>
-                    <img src={bedsIcon} alt="Rooms" />
-                </Link>
-  
-                <Link className="rooti-button" to ="/profile">
-                    <p className="link-text">Profile</p>
-                    <img src={profileIcon} alt="Profile" />
-                </Link>
-  
-                <Link className="rooti-button" to ="/contact">
-                    <p className="link-text">Contact</p>
-                    <img src={contactIcon} alt="Contact" />
-                </Link>
-        </div>
-
-        <input className="room-search" type="search" name="q" placeholder="Where do you need a room?" />
-        <img className="search-img" src={searchIcon} alt="Search" />
-        <button className="submit-search" type="submit"></button>
-        <Link className="log-in-button" to ="/login">
-          <p className="link-text">Access</p>
-        </Link>
-      </form>
-
-      <section className="recomendations">
-        <p className="text-descriptive">Need a room?</p>
-        <p className="text-descriptive-2">Discover our crazy offers & Share with your dream partners</p>
-        <div className="text-div"></div>
-      </section>
+    <div>
+        <div className="top-container p-6 rounded-lg shadow-lg">
+                  <img className="mainlogo w-full md:w-auto" src={companyImage} alt="Company Logo" />
+                  <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
+          
+                  <form className="search-bar-form">
+                    <div className="menu-div flex flex-wrap justify-center">
+                        <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/">
+                           <img src={houseImage} alt="Home" />
+                        </Link>
+        
+                        <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/rooms">
+                            <img src={bedsImage} alt="Rooms" />
+                        </Link>
+          
+                        <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/profile">
+                            
+                            <img src={profileImage} alt="Profile" />
+                        </Link>
+          
+                        <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/contact">
+                            
+                            <img src={contactImage} alt="Contact" />
+                        </Link>
+                    </div>
+          
+                    <div className="relative mt-4">
+                      <input className="room-search w-full md:w-auto" type="search" name="q" placeholder="Where do you need a room" />
+                      <img className="search-img absolute top-0 right-0 w-6 h-6" src={searchImage} alt="Search" />
+                      <button className="submit-search" type="submit"></button>
+                    </div>
+                    <Link className="log-in-button w-full sm:w-auto mt-4" to="/login">
+                        <p className="link-text text-center">Access</p>
+                    </Link>
+                    
+                  </form>
+                </div>
+          
+                <section className="recomendations text-center md:text-left">
+                  <p className="text-descriptive">Need a room?</p>
+                  <p className="text-descriptive-2">Discover our crazy offers & Share with your dream partners</p>
+                </section>
 
       <section className="profile-section">
         <form className="form-class" method="post" action="/">
