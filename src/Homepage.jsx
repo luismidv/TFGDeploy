@@ -15,73 +15,75 @@ function Home(){
     const navigate = useNavigate();
 }
 
+
+
 const HomePage = () => {
     return (
       <div>
-        <div className="top-container">
-          <img className="mainlogo" src={companyImage} alt="Company Logo" />
-          <p className="pslogan">Improving your house sharing experience</p>
+        <div className="top-container p-6 rounded-lg shadow-lg">
+          <img className="mainlogo w-full md:w-auto" src={companyImage} alt="Company Logo" />
+          <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
   
           <form className="search-bar-form">
-            <div className="menu-div">
-                <Link className="rooti-button" to ="/">
+            <div className="menu-div flex flex-wrap justify-center gap-4 p-4 bg-gray-100">
+                <Link className="rooti-button text-white rounded-md hover:bg-blue-700 transition w-full sm:w-1/2 md:w-auto" to="/">
                     <p className="link-text">Home</p>
                     <img src={houseImage} alt="Home" />
                 </Link>
 
-                {/*<button  className = "rooti-button" onClick = {() => navigate("/rooms")}> Rooms </button>*/}
-                <Link className="rooti-button" to ="/rooms">
+                <Link className="rooti-button text-white rounded-md hover:bg-blue-700 transition w-full sm:w-1/2 md:w-auto" to="/rooms">
                     <p className="link-text">Rooms</p>
                     <img src={bedsImage} alt="Rooms" />
                 </Link>
   
-                <Link className="rooti-button" to ="/profile">
+                <Link className="rooti-button text-white rounded-md hover:bg-blue-700 transition w-full sm:w-1/2 md:w-auto" to="/profile">
                     <p className="link-text">Profile</p>
                     <img src={profileImage} alt="Profile" />
                 </Link>
   
-                <Link className="rooti-button" to ="/contact">
+                <Link className="rooti-button text-white rounded-md hover:bg-blue-700 transition w-full sm:w-1/2 md:w-auto" to="/contact">
                     <p className="link-text">Contact</p>
                     <img src={contactImage} alt="Contact" />
                 </Link>
             </div>
   
-            <input className="room-search" type="search" name="q" placeholder="Where do you need a room" />
-            <img className="search-img" src={searchImage} alt="Search" />
-            <button className="submit-search" type="submit"></button>
-            <Link className="log-in-button" to ="/login">
-                    <p className="link-text">Access</p>
+            <div className="relative mt-4">
+              <input className="room-search w-full md:w-auto" type="search" name="q" placeholder="Where do you need a room" />
+              <img className="search-img absolute top-0 right-0 w-6 h-6" src={searchImage} alt="Search" />
+              <button className="submit-search" type="submit"></button>
+            </div>
+            <Link className="log-in-button w-full sm:w-auto mt-4" to="/login">
+                <p className="link-text text-center">Access</p>
             </Link>
             
           </form>
         </div>
   
-        <section className="recomendations">
+        <section className="recomendations text-center md:text-left">
           <p className="text-descriptive">Need a room?</p>
           <p className="text-descriptive-2">Discover our crazy offers & Share with your dream partners</p>
-          <div className="text-div"></div>
         </section>
   
         <div id="image-expo" className="image-expositor">
-          <AppExpo ></AppExpo>
+          <AppExpo />
         </div>
   
-        <p className="general-description">
+        <p className="general-description text-center md:text-left">
           Do not waste your time, we do it for you.
         </p>
-        <p className="general-description-p">
+        <p className="general-description-p text-center md:text-left">
           Searching for house partners can be difficult, we provide an opportunity <br />
           to get the best possible partners.Our powered by AI system gives us the power<br /> for selecting your perfect match. <br />
-          Fill out the following data sowe can find your match considering your preferences.
+          Fill out the following data so we can find your match considering your preferences.
         </p>
   
-        <p className="general-description" style={{ top: '1730px', left: '237px' }}>Let the hard work be for us</p>
-        <a className="form-button" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
+        <p className="general-description text-center md:text-left" style={{ top: '1730px', left: '237px' }}>Let the hard work be for us</p>
+        <a className="form-button block w-full md:w-auto" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
           Get started
         </a>
-        <img className="room-idx" src={roomIdxImage} alt="Room Index" />
+        <img className="room-idx w-full md:w-auto" src={roomIdxImage} alt="Room Index" />
   
-        <section className="why-us">
+        <section className="why-us text-center md:text-left">
           <h1 className="why-us-h1">Why choosing Roomatch</h1>
           <p className="why-us-p">
             Find your dream room <br /> <br />
@@ -91,12 +93,12 @@ const HomePage = () => {
             Sharing a home can be a difficult experience <br />our idea is to turn that experience into<br />
             <strong>The greatest one possible.</strong>
           </p>
-          <img className="img-banner" src={roombannerImage} alt="Why Roomatch" />
+          <img className="img-banner w-full md:w-auto" src={roombannerImage} alt="Why Roomatch" />
         </section>
   
-        <section className="about-us">
+        <section className="about-us text-center md:text-left">
           <h1 className="about-us-h1">About us</h1>
-          <div className="about-us-div">
+          <div className="about-us-div grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="div-text-about">
               <p className="p-div-section">Our purpose</p>
               <p className="purpose-description">
@@ -127,5 +129,6 @@ const HomePage = () => {
         </section>
       </div>
     );
-  };
-  export default HomePage;
+};
+  
+export default HomePage;
