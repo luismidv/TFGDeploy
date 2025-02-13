@@ -23,34 +23,30 @@ import bathroomsvg from "./static/media/RoomBanners/bathroom.svg"
 const RoomInfo = () => {
   return (
     <div>
-      <div className = "top-container">
-      <img className="mainlogo" src={companyImage} alt="Company Logo" />
-      <p className="pslogan">Improving your house sharing experience</p>
-
+      <div className="top-container p-6 rounded-lg shadow-lg">
+                <img className="mainlogo w-full md:w-auto" src={companyImage} alt="Company Logo" />
+                <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
+        
+                <form className="search-bar-form">
+                  <div className="menu-div flex flex-wrap justify-center">
+                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/">
+                         <img src={houseImage} alt="Home" />
+                      </Link>
       
-      <form className="search-bar-form">
-            <div className="menu-div">
-                <Link className="rooti-button" to ="/">
-                    <p className="link-text">Home</p>
-                    <img src={houseImage} alt="Home" />
-                </Link>
-
-                {/*<button  className = "rooti-button" onClick = {() => navigate("/rooms")}> Rooms </button>*/}
-                <Link className="rooti-button" to ="/rooms">
-                    <p className="link-text">Rooms</p>
-                    <img src={bedsImage} alt="Rooms" />
-                </Link>
-  
-                <Link className="rooti-button" to ="/profile">
-                    <p className="link-text">Profile</p>
-                    <img src={profileImage} alt="Profile" />
-                </Link>
-  
-                <Link className="rooti-button" to ="/contact">
-                    <p className="link-text">Contact</p>
-                    <img src={contactImage} alt="Contact" />
-                </Link>
-            </div>
+                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/rooms">
+                          <img src={bedsImage} alt="Rooms" />
+                      </Link>
+        
+                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/profile">
+                          
+                          <img src={profileImage} alt="Profile" />
+                      </Link>
+        
+                      <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/contact">
+                          
+                          <img src={contactImage} alt="Contact" />
+                      </Link>
+                  </div>
   
             <input className="room-search" type="search" name="q" placeholder="Where do you need a room" />
             <img className="search-img" src={searchImage} alt="Search" />
