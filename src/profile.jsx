@@ -12,6 +12,15 @@ import "./static/css/index1.css"
 import "./static/css/profile.css"
 import{ useState} from "react";
 import companyImage from './static/media/company.jpg';
+import companyImage from './static/media/company.jpg';
+import houseImage from './static/media/house1.svg';
+import bedsImage from './static/media/beds-pillow.svg';
+import profileImage from './static/media/profile.svg';
+import contactImage from './static/media/agenda-phone-number-svgrepo-com.svg';
+import searchImage from './static/media/search-svgrepo-com.svg';
+import roombanner3 from "./static/media/roombanner3.webp";
+import roombanner4 from "./static/media/roombanner4.jpg";
+import roombanner5 from "./static/media/roombanner5.jpg";
 
 
 
