@@ -12,7 +12,6 @@ import "./static/css/index1.css"
 import "./static/css/profile.css"
 import{ useState} from "react";
 import companyImage from './static/media/company.jpg';
-import companyImage from './static/media/company.jpg';
 import houseImage from './static/media/house1.svg';
 import bedsImage from './static/media/beds-pillow.svg';
 import profileImage from './static/media/profile.svg';
