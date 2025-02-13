@@ -47,7 +47,7 @@ const HomePage = () => {
   
             <div className="divsearch relative mt-4">
               <input className="room-search w-full md:w-auto" type="search" name="q" placeholder="Where do you need a room" />
-              <img className="search-img absolute w-6 h-6" src={searchImage} alt="Search" />
+              <img className="search-img" src={searchImage} alt="Search" />
               <button className="submit-search" type="submit"></button>
             </div>
             <Link className="log-in-button w-full sm:w-auto mt-4" to="/login">
