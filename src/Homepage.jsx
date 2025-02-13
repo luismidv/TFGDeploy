@@ -27,22 +27,22 @@ const HomePage = () => {
           <form className="search-bar-form">
             <div className="menu-div flex flex-wrap justify-center">
                 <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/">
-                    <p className="link-text">Home</p>
+                    
                     <img src={houseImage} alt="Home" />
                 </Link>
 
                 <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/rooms">
-                    <p className="link-text">Rooms</p>
+                    
                     <img src={bedsImage} alt="Rooms" />
                 </Link>
   
                 <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/profile">
-                    <p className="link-text">Profile</p>
+                    
                     <img src={profileImage} alt="Profile" />
                 </Link>
   
                 <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/contact">
-                    <p className="link-text">Contact</p>
+                    
                     <img src={contactImage} alt="Contact" />
                 </Link>
             </div>
