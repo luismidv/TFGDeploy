@@ -7,14 +7,14 @@ import searchImage from './static/media/search-svgrepo-com.svg';
 import roomIdxImage from './static/media/room_idx.webp';
 import roombannerImage from './static/media/roombanner8.jpg';
 import { Link } from 'react-router-dom';
-import { AppExpo, Footer } from './App';
+import { AppExpo } from './App';
 import { useNavigate } from 'react-router-dom';
 
 import React from "react";
 import "./static/css/index1.css";
 import "./static/css/roomStyle.css";
 import { RoomBannerCall } from './Room';
-import { Footer } from './App';
+import { Footeras } from './App';
 import { Headers } from './App';
 
     
@@ -33,7 +33,7 @@ export function Template() {
       </div>
 
       {/* Sección "Sobre nosotros" */}
-      <Footer></Footer>
+      <Footeras></Footeras>
     </div>
   );
 }

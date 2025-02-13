@@ -20,7 +20,8 @@ import searchImage from './static/media/search-svgrepo-com.svg';
 import roombanner3 from "./static/media/roombanner3.webp";
 import roombanner4 from "./static/media/roombanner4.jpg";
 import roombanner5 from "./static/media/roombanner5.jpg";
-
+import { Footeras } from "./App";
+import { Headers } from "./App";
 
 
 function Home(){
@@ -170,7 +171,7 @@ const handleSubmit = async(e) => {
         </form>
       </section>
 
-      <Footer></Footer>
+      <Footeras></Footeras>
     </div>
   );
 }

@@ -19,7 +19,7 @@ import directionsvg from "./static/media/RoomBanners/location.svg"
 import eurosvg from "./static/media/RoomBanners/euro.svg"
 import bathroomsvg from "./static/media/RoomBanners/bathroom.svg"
 import { Headers } from "./App";
-import { Footer } from "./App";
+import { Footeras } from "./App";
 
 
 const RoomInfo = () => {
@@ -67,7 +67,7 @@ const RoomInfo = () => {
       </div>
     </div> 
       
-      <Footer></Footer>
+      <Footeras></Footeras>
     </div>
   );
 };

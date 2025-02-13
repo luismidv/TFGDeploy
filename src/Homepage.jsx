@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import { AppExpo } from './App';
 import { useNavigate } from 'react-router-dom';
 import { Headers } from './App';
-import { Footer } from './App';
+import { Footeras } from './App';
 
 function Home(){
     const navigate = useNavigate();
@@ -56,7 +56,7 @@ const HomePage = () => {
           <img className="img-banner w-full md:w-auto" src={roombannerImage} alt="Why Roomatch" />
         </section>
   
-        <Footer></Footer>
+        <Footeras></Footeras>
       </div>
     );
 };

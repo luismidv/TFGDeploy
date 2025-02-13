@@ -106,7 +106,7 @@ export function Headers(){
       );
   };
 
-export function Footer(){
+export function Footeras(){
   return(
   <section className="about-us text-center md:text-left">
           <h1 className="about-us-h1">About us</h1>
