@@ -11,6 +11,8 @@ import { useNavigate } from 'react-router-dom';
 import "./static/css/index1.css"
 import "./static/css/profile.css"
 import{ useState} from "react";
+import companyImage from './static/media/company.jpg';
+
 
 
 function Home(){
