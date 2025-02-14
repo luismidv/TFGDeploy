@@ -38,7 +38,7 @@ const HomePage = () => {
           </p>
   
           <p className="general-description2 text-center md:text-left">Let the hard work for us</p>
-          <a className="form-button block w-full md:w-auto" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
+          <a className="form-button block md:w-auto" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
             Get started
           </a>
           <img className="room-idx w-full md:w-auto" src={roomIdxImage} alt="Room Index" />
