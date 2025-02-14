@@ -258,7 +258,7 @@ select{
 
 .why-us{
     position: absolute;
-    top: 2050px;
+    top: 1750px;
     left: 365px;
     background-color: #303ab2;
     width: 1200px;
@@ -466,8 +466,8 @@ select{
     display: inline-flex;
     position: relative;
     font-family: "Proxima Nova", system-ui, sans-serif;
-    left: 240px;
-    top: 1650px;
+    left: 800px;
+    top: 1250px;
     width: 316px;
     height: 60px;
     background-color: #303ab2;

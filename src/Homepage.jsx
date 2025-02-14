@@ -29,10 +29,9 @@ const HomePage = () => {
         </div>
         <div className = "text-section text-center md:text-left relative md:translate-y-0 translate-y-[700px] transition-transform duration-300">
           
-          <a className="form-button block" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
+          <a className="form-button block translate-x-[500px] md:translate-x-0 transition-transform duration-300" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
             Get started
           </a>
-          <img className="room-idx w-full md:w-auto" src={roomIdxImage} alt="Room Index" />
         </div>
   
         <section className="why-us text-center md:text-left relative md:translate-y-0 translate-y-[1200px] transition-transform duration-300">
