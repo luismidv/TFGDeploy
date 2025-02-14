@@ -27,7 +27,7 @@ const HomePage = () => {
         <div id="image-expo" className="image-expositor">
           <AppExpo />
         </div>
-        <div className = "text-center md:text-left relative md:translate-y-0 translate-y-[1000px] transition-transform duration-300">
+        <div className = "text-center md:text-left relative md:translate-y-0 translate-y-[700px] transition-transform duration-300">
           <p className="general-description text-center md:text-left">
             Do not waste your time, we do it for you.
           </p>
@@ -44,7 +44,7 @@ const HomePage = () => {
           <img className="room-idx w-full md:w-auto" src={roomIdxImage} alt="Room Index" />
         </div>
   
-        <section className="why-us text-center md:text-left relative md:translate-y-0 translate-y-[1500px] transition-transform duration-300">
+        <section className="why-us text-center md:text-left relative md:translate-y-0 translate-y-[1200px] transition-transform duration-300">
           <h1 className="why-us-h1">Why choosing Roomatch</h1>
           <p className="why-us-p">
             Find your dream room <br /> <br />
