@@ -98,6 +98,7 @@ export function Headers(){
           <section className="recomendations text-center md:text-left">
             <p className="text-descriptive">Need a room?</p>
             <p className="text-descriptive-2">Discover our crazy offers & Share with your dream partners</p>
+            <div className = "text-div"></div>
           </section>
     
         
@@ -108,7 +109,7 @@ export function Headers(){
 
 export function Footeras(){
   return(
-  <section className="about-us text-center md:text-left">
+  <section className="about-us text-center md:text-left relative md:translate-y-0 translate-y-[500px] transition-transform duration-300">
           <h1 className="about-us-h1">About us</h1>
           <div className="about-us-div grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="div-text-about">

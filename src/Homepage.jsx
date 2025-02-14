@@ -43,7 +43,7 @@ const HomePage = () => {
         </a>
         <img className="room-idx w-full md:w-auto" src={roomIdxImage} alt="Room Index" />
   
-        <section className="why-us text-center md:text-left">
+        <section className="why-us text-center md:text-lef relative md:translate-y-0 translate-y-[500px] transition-transform duration-300">
           <h1 className="why-us-h1">Why choosing Roomatch</h1>
           <p className="why-us-p">
             Find your dream room <br /> <br />
