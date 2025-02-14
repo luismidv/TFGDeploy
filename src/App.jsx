@@ -110,30 +110,35 @@ export function Headers(){
 export function Footeras(){
   return(
     <section className="about-us px-4 py-12 md:py-16 lg:py-20 max-w-4xl mx-auto text-center md:text-left">
-  <h1 className="about-us-h1 text-3xl md:text-4xl font-bold mb-6">About Us</h1>
+  <h1 className="about-us-h1 mb-6">About us</h1>
 
   <div className="space-y-6">
-    <p className="p-div-section text-base md:text-lg">
-      <span className="font-semibold">Our Purpose</span> <br />
-      Mainly, our purpose is to help people have the best experience when sharing a home.
+    <p className="p-div-section">
+      Our purpose <br />
+      Mainly our purpose is to help people <br />
+      have the best experience when sharing a home.
     </p>
 
-    <p className="p-div-section text-base md:text-lg">
-      <span className="font-semibold">Who are we?</span> <br />
-      Company created in 2024 as a final degree project with the idea of improving students' sharing experience.
+    <p className="p-div-section">
+      Who are we? <br />
+      Company created in 2024 as a final degree project <br />
+      with the idea of improving students' sharing experience.
     </p>
 
-    <p className="p-div-section text-base md:text-lg">
-      <span className="font-semibold">Our Team</span> <br />
-      Our team is composed of 1 person: a computer science student focused on machine learning.
+    <p className="p-div-section">
+      Our team <br />
+      Our team is composed of 1 person: a computer science <br />
+      student focused on machine learning.
     </p>
 
-    <p className="p-div-section text-base md:text-lg">
-      <span className="font-semibold">Work with us</span> <br />
-      Feel free to message us via our email or LinkedIn if you’re considering working with us.
+    <p className="p-div-section">
+      Work with us <br />
+      Feel free to message us via our email or <br />
+      LinkedIn if you’re considering working with us.
     </p>
   </div>
 </section>
+
 
 
   )
