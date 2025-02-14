@@ -109,7 +109,7 @@ export function Headers(){
 
 export function Footeras(){
   return(
-    <section className="about-us px-4 py-12 md:py-16 lg:py-20 w-full text-center md:text-left">
+    <section className="about-us px-4 py-12 md:py-16 lg:py-20 w-full text-center md:text-left relative md:translate-y-0 translate-y-[700px] transition-transform duration-300">
   <h1 className="about-us-h1 mb-6">About us</h1>
 
   <div className="last-div space-y-6">
