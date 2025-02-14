@@ -27,7 +27,7 @@ const HomePage = () => {
         <div id="image-expo" className="image-expositor">
           <AppExpo />
         </div>
-        <div className = "text-center md:text-left relative md:translate-y-0 translate-y-[500px] transition-transform duration-300">
+        <div className = "text-center md:text-left relative top-[300px] left-[50px] md:top-0 md:left-0 transition-all duration-300">
           <p className="general-description text-center md:text-left">
             Do not waste your time, we do it for you.
           </p>
