@@ -364,26 +364,46 @@ select{
     top: 0px;
     width: 1920px;
     height: 400px;
-    color: #FFF8DC
+    color: #FFF8DC;
+    
 }
 
 .div-text-about {
     position: relative;
+    
 }
 
 .p-div-section{
     position: relative;
-    left:150px;
+    left:50px;
+    top: -100px;
+    font-size: 20px
+    
 }
 
 .p-div-section + p{
     position: relative;
     margin-top: 20px;
-    left: 10px;
+    left: 500px;
     font-size: 20px;
+    top: -240px;
 }
 
+.p-div-section + p +p{
+    position: relative;
+    margin-top: 20px;
+    left: 1000px;
+    font-size: 20px;
+    top: -390px;
+}
 
+.p-div-section + p +p +P{
+    position: relative;
+    margin-top: 20px;
+    left: 1400px;
+    font-size: 20px;
+    top: -532px;
+}
 
 .menu-div{
     display: flex;
@@ -488,4 +508,7 @@ select{
 .text-section{
     position: relative;
     top: 0px;
+}
+.last-div{
+    height: 200px;
 }
