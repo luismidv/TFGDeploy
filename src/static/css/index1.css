@@ -153,8 +153,8 @@
 }
 
 .general-description{
-    position: absolute;
-    top: 1500px;
+    position: relative;
+    top: 1450px;
     left: 237px;
     font-family: "Proxima Nova", system-ui, sans-serif;
     font-weight: bold;
@@ -162,11 +162,21 @@
     color:#303ab2;
 }
 
-.general-description-p {
+.general-description2{
+    position: relative;
+    top: 1630px;
+    left: 237px;
+    font-family: "Proxima Nova", system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color:#303ab2;
+}
+
+.generaldescp {
     position: absolute;
     font-size: 21px;
     left: 237px;
-    top: 1570px;
+    top: 1530px;
     font-weight: bold;
     color:303ab2 ;
     white-space: pre-line;
@@ -434,10 +444,10 @@ select{
 
 .form-button{
     display: inline-flex;
-    position: absolute;
+    position: relative;
     font-family: "Proxima Nova", system-ui, sans-serif;
     left: 240px;
-    top: 1850px;
+    top: 1750px;
     width: 316px;
     height: 60px;
     background-color: #303ab2;
@@ -454,7 +464,7 @@ select{
 
 .room-idx{
     position:absolute;
-    top: 1510px;
+    top: 1450px;
     width: 600px;
     height:400px;
     left:1125px;
@@ -475,7 +485,7 @@ select{
     font-weight: bold;
 }
 
-.text-part{
-    
-    
+.text-section{
+    position: relative;
+    top: -250px;
 }

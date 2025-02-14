@@ -27,17 +27,17 @@ const HomePage = () => {
         <div id="image-expo" className="image-expositor">
           <AppExpo />
         </div>
-        <div className = "text-center md:text-left relative md:translate-y-0 translate-y-[700px] transition-transform duration-300">
+        <div className = "text-section text-center md:text-left relative md:translate-y-0 translate-y-[700px] transition-transform duration-300">
           <p className="general-description text-center md:text-left">
             Do not waste your time, we do it for you.
           </p>
-          <p className="general-description-p text-center md:text-left">
+          <p className="generaldescp text-center md:text-left">
             Searching for house partners can be difficult, we provide an opportunity <br />
             to get the best possible partners.Our powered by AI system gives us the power<br /> for selecting your perfect match. <br />
             
           </p>
   
-          <p className="general-description text-center md:text-left">Let the hard work be for us</p>
+          <p className="general-description2 text-center md:text-left">Let the hard work for us</p>
           <a className="form-button block w-full md:w-auto" href="./src/templates/room/started.html" target="_blank" rel="noopener noreferrer">
             Get started
           </a>
