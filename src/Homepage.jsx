@@ -16,7 +16,7 @@ import { Footeras } from './App';
 function Home(){
     const navigate = useNavigate();
 }
-
+  
 
 
 const HomePage = () => {

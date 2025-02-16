@@ -59,7 +59,7 @@ export function Headers(){
   return (
         <div>
           <div className="top-container p-6 rounded-lg shadow-lg">
-            <img className="mainlogo w-full md:w-auto" src={companyImage} alt="Company Logo" />
+            <img className="mainlogo" src={companyImage} alt="Company Logo" />
             <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
     
             <form className="search-bar-form">
