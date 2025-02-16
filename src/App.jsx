@@ -62,7 +62,7 @@ export function Headers(){
             <img className="mainlogo" src={companyImage} alt="Company Logo" />
             <p className="pslogan text-center md:text-left">Improving your house sharing experience</p>
     
-            <form className="search-bar-form">
+            <form className="search-bar-form ">
               <div className="menu-div flex flex-wrap justify-center">
                   <Link className="rooti-button  transition w-full sm:w-1/2 md:w-auto" to="/">
                      <img src={houseImage} alt="Home" />
@@ -83,12 +83,12 @@ export function Headers(){
                   </Link>
               </div>
     
-              <div className="divsearch relative mt-4">
+              <div className="divsearch">
                 <input className="room-search  " type="search" name="q" placeholder="Where do you need a room" />
                 <img className="search-img" src={searchImage} alt="Search" />
                 <button className="submit-search" type="submit"></button>
               </div>
-              <Link className="log-in-button w-full sm:w-auto mt-4" to="/login">
+              <Link className="log-in-button" to="/login">
                   <p className="link-text text-center">Access</p>
               </Link>
               
